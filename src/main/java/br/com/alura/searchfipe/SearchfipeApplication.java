@@ -1,5 +1,6 @@
 package br.com.alura.searchfipe;
 
+import br.com.alura.searchfipe.main.Principal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +14,7 @@ public class SearchfipeApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Aplicação consulta tabela Fipe");
+		Principal principal = new Principal();
+		principal.exibeMenu();
 	}
 }
